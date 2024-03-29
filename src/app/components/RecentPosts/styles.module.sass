@@ -1,0 +1,122 @@
+.posts
+  margin-left: auto
+  margin-right: auto
+  max-width: var(--max-width)
+  position: relative
+  margin-top: 6.5em
+  font-size: 20px
+
+  @media screen and (max-width: 1200px)
+    font-size: 1.47vw
+
+  @media screen and (max-width: 768px)
+    font-size: 3.33vw
+
+
+
+  h2
+    font-size: 3.125em
+    line-height: 1.5
+    max-width: 100%
+    text-align: center
+
+    & + p
+      font-size: 1.1em
+      line-height: 1.25
+      max-width: 50%
+      text-align: center
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 3.5em
+      margin-top: 1em
+      @media all and (max-width: 961px)
+        max-width: 70%
+
+  @media all and (max-width: 768px)
+
+  .cards
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    column-gap: 1em
+    row-gap: 2em
+
+    @media all and (max-width: 961px)
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr))
+
+
+    @media all and (max-width: 768px)
+      grid-template-columns: 1fr
+
+    .card
+      padding: 1.05em
+      border-radius: 3.1em
+      border: 1px solid var(--grey)
+      position: relative
+
+      h3
+        margin-top: 1em
+        font-size: 1.25em
+        line-height: 1.5
+        color: var(--black)
+
+        @media all and (max-width: 961px)
+          font-size: 1.55em
+
+      p
+        color: var(--light-black)
+        font-size: .8em
+
+        @media all and (max-width: 961px)
+          font-size: 1.1em
+
+      img
+        max-width: 100%
+        height: auto
+        width: 100%
+        border-top-left-radius: 2.25em
+        border-top-right-radius: 2.25em
+
+      .titles
+        margin-top: auto
+        margin-bottom: auto
+        display: grid
+        grid-template: repeat(2, auto)/repeat(2, auto)
+        align-items: center
+        @media all and (max-width: 1200px)
+          margin-left: 20px
+        &>*:first-child
+          grid-row: 1/2
+          grid-column: 1/-1
+
+
+      .cta_wrapper
+        display: grid
+        grid-template: 1fr/repeat(2, auto)
+        align-items: center
+
+      .category
+        position: absolute
+        left: 2.45em
+        top: 48%
+        background-color: #FFFFFF
+        color: var(--light-black)
+        font-size: 0.8em
+        padding: .5em
+        border-radius: .4em
+        border-bottom-left-radius: 0
+
+        @media all and (max-width: 1200px)
+          top: 50%
+
+        @media all and (max-width: 961px)
+          top: 59%
+
+        @media all and (max-width: 768px)
+          top: 56%
+
+
+
+
+
+
+

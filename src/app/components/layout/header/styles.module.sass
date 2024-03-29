@@ -1,0 +1,86 @@
+.root
+
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 1.25em
+  background: #ffffff
+  margin-left: auto
+  margin-right: auto
+  max-width: var(--max-width)
+  font-size: 20px
+
+  @media screen and (max-width: 1200px)
+    font-size: 1.47vw
+
+  @media screen and (max-width: 961px)
+    font-size: 3.33vw
+
+  @media screen and (max-width: 768px)
+    font-size: 5vw
+
+  .menu
+    svg.icon
+      fill: none
+      margin-top: 0px
+      stroke: #000
+      stroke-width: 12
+      stroke-linecap: square
+      stroke-linejoin: round
+
+      @media all and (min-width: 961.1px)
+        display: none
+
+  nav.menu__items.js__active
+    @media all and (max-width: 961px)
+
+      display: flex!important
+
+      animation: fadein .3s ease-in-out
+
+  nav.menu__items
+    padding: 13px
+    margin-right: 20px
+
+
+    @media all and (max-width: 961px)
+      display: none
+
+
+
+
+    a
+      font-size: 1em
+      margin-left: 40px
+      text-decoration: none
+      color: var(--black)
+      transition: color .4s ease-in-out
+
+      &.active, &:hover
+        color: var(--main-color)
+
+      @media all and (max-width: 961px)
+        line-height: 1.8
+
+
+    @media all and (max-width: 961px)
+
+      flex-direction: column
+      align-items: center
+      position: absolute
+      right: -20px
+      top: 10%
+      width: 100%
+      height: auto
+      padding: 1.5em 0
+      background-color: #FFFFFF
+      z-index: 3
+      border-bottom-left-radius: 1em
+      border-bottom-right-radius: 1em
+
+
+@keyframes fadein
+  0%
+    opacity: 0
+  100%
+    opacity: 1

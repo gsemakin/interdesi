@@ -1,0 +1,94 @@
+.root
+  margin-left: auto
+  margin-right: auto
+  max-width: 1440px
+  position: relative
+
+  overflow: hidden
+  font-size: 20px
+
+  @media screen and (max-width: 1200px)
+    font-size: 1.27vw
+
+  @media screen and (max-width: 768px)
+    font-size: 2.33vw
+
+
+
+  img
+    max-width: 100%
+    width: 100%
+    height: auto
+    border-bottom-left-radius: 14.5em
+
+
+    @media all and (max-width: 768px)
+      width: 150%
+      max-width: 150%
+      object-fit: cover
+
+
+  &__banner
+    width: 100%
+    height: auto
+
+
+  &__text
+    position: absolute
+    top: 20%
+    left: 5%
+    width: 100%
+    z-index: 3
+
+    @media screen and (max-width: 768px)
+      width: 90%
+      top: 12%
+      display: flex
+      flex-direction: column
+      height: 70%
+      justify-content: space-between
+
+
+    h1
+      font-size: 2.5em
+      margin-bottom: 19px
+      width: 70%
+      color: #FFFFFF
+      @media screen and (max-width: 1200px)
+        font-size: 3em
+    p
+      font-size: 1.375em
+      color: #FFFFFF
+      width: 40%
+      @media screen and (max-width: 1200px)
+        font-size: 1.25em
+
+    h1,p
+      position: relative
+      z-index: 3
+      @media screen and (max-width: 768px)
+        width: 100%
+        text-align: center
+
+    &:before
+      z-index: 2
+      position: absolute
+      content: ''
+      background-color: rgba(0,0,0,0.3)
+
+      width: calc(70% + 2em)
+      height: calc(100% + 2em)
+      left: -1em
+      top: -1em
+      filter: blur(5px)
+
+      @media all and (max-width: 768px)
+        width: calc(100% + 2em)
+        height: calc(50% + 2em)
+        filter: blur(3px)
+
+.text__button
+  margin-top: 3em
+  @media screen and (max-width: 768px)
+    margin-left: auto
+    margin-right: auto

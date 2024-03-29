@@ -1,0 +1,31 @@
+.cta
+  background-color: var(--secondary-color)
+  border-radius: 100%
+  color: black
+  width: 3.5em
+  height: 3.5em
+  position: relative
+  margin: 20px 0px 20px auto
+  transition: opacity .25s ease-in-out
+
+  @media all and (max-width: 1200px)
+    margin: 20px 20px 20px auto
+
+  &:hover
+    opacity: 0.75
+    cursor: pointer
+
+  &__svg
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+    path
+      transition: stroke .25s ease-in-out
+
+
+    &:hover
+      cursor: pointer
+
+

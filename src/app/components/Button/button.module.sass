@@ -1,0 +1,49 @@
+.btn
+  background-color: #292F36
+  border-radius: 14px
+  width: fit-content
+  height: 3.55em
+  position: relative
+  transition: background-color .3s ease-in-out
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 1.05em 0 1.15em 1.7em
+  column-gap: 1em
+  @media all and (max-width: 961px)
+    column-gap: .8em
+    height: 4.55em
+
+  &__svg
+
+    @media all and (max-width: 961px)
+      transform: scale(0.7)
+    @media all and (max-width: 370px)
+      transform: scale(0.5)
+    path
+      transition: all .3s ease-in-out
+
+
+  &:hover
+    cursor: pointer
+    background-color: #000000
+
+  p
+    color: #FFF
+    font-size: 1.125em
+    font-weight: 400
+    letter-spacing: 0.72px
+    white-space: nowrap
+    line-height: 1
+
+    @media all and (max-width: 768px)
+      font-size: 1em
+
+
+//svg
+  //  position: absolute
+  //  top: 0
+  //  right: 0
+  //  left: 0
+  //  bottom: 0
+  //  width: 100%
