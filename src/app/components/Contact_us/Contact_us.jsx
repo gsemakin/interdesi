@@ -9,7 +9,7 @@ export const Contact_us = () => {
             <div className={styles.root}>
                 <div className={styles.col}>
                     <h2>Вместе мы реализуем самые амбициозные проекты</h2>
-                    <p className={styles.col__txt}>Новаторство, индивидуальный подход, авторский стиль и большой опыт дают воплощение самым сложным проектам. </p>
+                    <p className={styles.col__txt}>Новаторство, индивидуальный подход, авторский стиль и большой опыт дают воплощение моим самым сложным проектам. </p>
                     <div className={styles.callto}>
 
 

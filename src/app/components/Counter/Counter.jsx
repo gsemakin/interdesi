@@ -35,7 +35,7 @@ export const Counter = () => {
                     return (
                         <div className={styles.counter__item}>
                             <h3 className={styles.title}>{item.number + item.afterNumber}</h3>
-                            <div className={styles.subtitle}>{item.txt}</div>
+                            <div className={styles.subtitle}><p>{item.txt}</p></div>
                         </div>
                     )
                 })}

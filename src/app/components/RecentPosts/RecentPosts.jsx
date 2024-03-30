@@ -7,53 +7,45 @@ import {Cta} from "@/app/components/CTA/CTA";
 export const RecentPosts = () => {
 
     const data = [
-        {
-            id: 1,
-            src: '/images/recentPosts/posts_1.jpg',
-            title: 'Residential Interior Designer In New York, USA',
-            postDate: 'November 23, 2021',
-            cta_link: '',
-            category: 'Kitchen Design',
 
-        },
 
         {
             id: 2,
-            src: '/images/recentPosts/posts_2.jpg',
-            title: 'How To Choose The Best Wall Art & Decor House?',
-            postDate: 'November 23, 2021',
+            src: '/images/posts_1.png',
+            title: 'Магазин рыбы и пива',
+            postDate: 'Октябрь 23, 2020',
             cta_link: '',
-            category: 'Living Room',
+            category: 'Проект',
 
         },
 
         {
             id: 3,
-            src: '/images/recentPosts/posts_3.jpg',
-            title: 'Tips To Increase The Interior Value Of Your House',
-            postDate: 'November 23, 2021',
+            src: '/images/posts_2.png',
+            title: 'Летняя веранда',
+            postDate: 'Декабрь 07, 2021',
             cta_link: '',
-            category: 'Minimalist Interior',
+            category: 'Проект',
 
         },
 
         {
             id: 4,
-            src: '/images/recentPosts/posts_4.jpg',
-            title: 'Best Solution For Any Office & Business Interior',
-            postDate: 'November 23, 2021',
+            src: '/images/posts_3.png',
+            title: 'Ресторан пива “Гринбир”',
+            postDate: 'Февраль 10, 2022',
             cta_link: '',
-            category: 'Kitchen Design',
+            category: 'Проект',
 
         },
 
         {
             id: 5,
-            src: '/images/recentPosts/posts_5.jpg',
-            title: 'Get Solution For Building Construction Work',
-            postDate: 'November 23, 2021',
+            src: '/images/posts_4.png',
+            title: 'Проект школы',
+            postDate: 'Март 07, 2022',
             cta_link: '',
-            category: 'Living Room',
+            category: 'Проект',
 
         },
 
@@ -63,7 +55,17 @@ export const RecentPosts = () => {
             title: 'Attain The Best Finish For The Kitchen Cabinets',
             postDate: 'November 23, 2021',
             cta_link: '',
-            category: 'Minimalist Interior',
+            category: 'Новости',
+
+        },
+
+        {
+            id: 1,
+            src: '/images/recentPosts/posts_1.jpg',
+            title: 'Residential Interior Designer In New York, USA',
+            postDate: 'November 23, 2021',
+            cta_link: '',
+            category: 'Новости',
 
         },
 
@@ -81,7 +83,9 @@ export const RecentPosts = () => {
                     data.map((item) =>  {
                         return   (
                             <div className={styles.card} key={item.id}>
-                                <Image width={590} height={661} alt={item.alt} src={item.src}></Image>
+                                <div className={styles.imgWrapper}>
+                                    <Image width={200} height={200} alt={item.alt} src={item.src}></Image>
+                                </div>
                                 <div className={styles.category}>
                                     {item.category}
                                 </div>

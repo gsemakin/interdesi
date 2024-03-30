@@ -3,7 +3,7 @@ import {Jost} from 'next/font/google'
 import "./globals.css";
 import Head from 'next/head'
 // const inter = Inter({ subsets: ["latin"] });
-const jost = Jost({weight: "400", subsets: ["cyrillic"]});
+// const jost = Jost({weight: "400", subsets: ["cyrillic"]});
 
 export const metadata = {
     title: "Интерьеры для кафе, ресторанов и баров",
@@ -26,7 +26,8 @@ export default function RootLayout({children}) {
                 {/*    rel="stylesheet"></link>*/}
             </Head>
         </head>
-        <body className={jost.className}>{children}</body>
+        {/*<body className={jost.className}>{children}</body>*/}
+       <body >{children}</body>
         </html>
     );
 }
