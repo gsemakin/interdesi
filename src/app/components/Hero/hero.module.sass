@@ -61,7 +61,7 @@
       color: #FFFFFF
       width: 60%
       @media screen and (max-width: 1200px)
-        font-size: 1.25em
+        font-size: 1.7em
 
     h1,p
       position: relative
@@ -71,7 +71,7 @@
         text-align: center
 
     &:before
-      z-index: 2
+
       position: absolute
       content: ''
       background-color: rgba(0,0,0,0.3)
@@ -89,6 +89,16 @@
 
 .text__button
   margin-top: 3em
+    z-index: 3
   @media screen and (max-width: 768px)
     margin-left: auto
     margin-right: auto
+  .btn_orange
+    margin-top: 1.1em
+    background-color: var(--main-color)
+    color: #FFFFFF
+    &:hover
+      background-color: var(--main-color)
+      opacity: .8
+    svg path
+      stroke: #000000

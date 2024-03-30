@@ -15,9 +15,11 @@
   .imgWrapper
     overflow: hidden
     width: 100%
-    height: 58%
+
     img
       object-fit: cover
+    @media screen and (min-width: 768.1px)
+      height: 58%
 
 
 
@@ -97,8 +99,8 @@
 
 
       .cta_wrapper
-        display: grid
-        grid-template: 1fr/repeat(2, auto)
+        //display: grid
+        //grid-template: 1fr/repeat(2, auto)
         align-items: center
 
       .category
@@ -107,7 +109,7 @@
         top: 48%
         background-color: #FFFFFF
         color: var(--light-black)
-        font-size: 0.8em
+        font-size: 0.9em
         padding: .5em
         border-radius: .4em
         border-bottom-left-radius: 0

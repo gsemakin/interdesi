@@ -12,12 +12,12 @@ const counterData = [{
     afterNumber: '+',
     txt: 'Успешных проектов'
 },
-//     {
-//     id: 3,
-//     number: 3,
-//     afterNumber: '',
-//     txt: 'Севастополь, Москва, Нижний Новгород'
-// },
+    {
+    id: 3,
+    number: 3,
+    afterNumber: '',
+    txt: 'Города: SEV, MSK, NN'
+},
     {
         id: 4,
         number: 150, afterNumber: '+',

@@ -28,13 +28,15 @@ export const Arrow = ({children, href}) => {
 
     return (
         <div onMouseEnter={animaSvg} onMouseLeave={backAnimaSvg} ref={ref} className={styles.arrow} onClick={()=>window.location.href = (href)}>
-            {children}
-            <svg className={styles.arrow__svg} xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewBox="0 0 24 17" fill="none">
-                <path d="M2.52625 8.93006L19.8608 8.79321" stroke="#CDA274" strokeWidth="2"
-                      strokeLinecap="square" />
-                <path d="M13.4124 2.40601L21.6519 8.92899L13.2465 15.5834" stroke="#CDA274" strokeWidth="2"
-                      strokeLinecap="square" />
-            </svg>
+            <p>
+                {children}
+                <svg className={styles.arrow__svg} xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewBox="0 0 24 17" fill="none">
+                    <path d="M2.52625 8.93006L19.8608 8.79321" stroke="#CDA274" strokeWidth="2"
+                          strokeLinecap="square" />
+                    <path d="M13.4124 2.40601L21.6519 8.92899L13.2465 15.5834" stroke="#CDA274" strokeWidth="2"
+                          strokeLinecap="square" />
+                </svg>
+            </p>
 
 
 

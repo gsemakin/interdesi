@@ -2,6 +2,7 @@
 import Image from "next/image";
 import styles from "./hero.module.sass";
 import {Button} from "../Button/Button";
+import React from "react";
 
 export const Hero =
     () => {
@@ -15,6 +16,7 @@ export const Hero =
             <p>Разработка интерьеров для&nbsp;кафе, ресторанов и&nbsp;баров</p>
         </div>
         <Button className={styles.text__button} href={'#'}>Сделать расчёт</Button>
+
     </div>
 
 </div>
